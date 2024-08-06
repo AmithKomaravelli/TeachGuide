@@ -2,7 +2,6 @@ const express = require("express");
 const colors = require("colors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
-const { connect } = require("mongoose");
 const connectDB = require("./config/db");
 const path = require("path");
 
@@ -36,5 +35,5 @@ const port = process.env.PORT || 8080;
 //listen port
 
 app.listen(port, () => {
-  console.log(`Server Running in ${process.env.NODE_MODE} Mode`.bgCyan.white);
+  console.log(`Server Running`.bgCyan.white);
 });
